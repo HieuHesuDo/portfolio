@@ -5,6 +5,56 @@
   text-decoration: none;
 }
 
+body {
+  background-color: #202020;
+}
+
+@font-face {
+  font-family: bigCaslon;
+  src: url("../font/BigCaslon-Regular.otf");
+}
+
+@font-face {
+  font-family: Helvetica;
+  src: url("../font/Helvetica.ttf");
+}
+
+@font-face {
+  font-family: Helvetica;
+  src: url("../font/Helvetica-Bold.ttf");
+  font-weight: bold;
+}
+
+.font-1{
+  font-family: bigCaslon;
+  font-weight: normal;
+  font-style: italic;
+}
+
+.font-2{
+  font-family: Helvetica;
+}
+
+.font-light{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+}
+
+.font-regular{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+.font-medium{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
+.font-bold{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+
 nav {
   width: 100%;
   position: fixed;
@@ -14,8 +64,8 @@ nav {
 }
 
 nav.sticky {
-  padding: 13px 0;
-  background: #4070f4;
+  padding: 10px 0;
+  background: #ff943c;
 }
 
 nav .navbar {
@@ -30,11 +80,11 @@ nav .navbar {
 nav .navbar .logo a {
   font-size: 40px;
   font-weight: 500;
-  color: #4070f4;
+  color: #ff943c;
 }
 
 nav.sticky .navbar .logo a {
-  color: #fff;
+  color: #000;
 }
 
 nav .navbar .menu {
@@ -47,10 +97,14 @@ nav .navbar .menu li {
 }
 
 nav .navbar .menu li a {
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 500px;
-  color: #000000;
+  color: #fff;
   transition: all 0.3s ease;
+}
+
+.choose {
+  color: #ff943c;
 }
 
 nav .navbar .menu li a:hover {
@@ -58,38 +112,38 @@ nav .navbar .menu li a:hover {
 }
 
 nav.sticky .navbar .menu li a {
-  color: #fff;
-}
-
-nav.sticky .navbar .menu li a:hover {
   color: #000;
 }
 
 .navbar .media-icons a {
   font-size: 18px;
   margin: 0 6px;
+  color: #ff943c;
 }
 
 nav.sticky .media-icons a {
-  color: #fff;
+  color: #000;
 }
 
 nav .menu-btn,
 .navbar .cancel-btn {
   position: absolute;
-  color: #fff;
-  font-size: 20px;
+  font-size: 30px;
   right: 30px;
   top: 20px;
   display: none;
 }
 
 nav .menu-btn {
-  color: #4070f4;
+  color: #ff943c;
+}
+
+nav .cancel-btn {
+  color: #000;
 }
 
 nav.sticky .menu-btn {
-  color: #fff;
+  color: #000;
 }
 
 /* CSS cho home section */
@@ -101,53 +155,56 @@ nav.sticky .menu-btn {
 .home .home-content {
   height: 100%;
   width: 80%;
-  margin: auto;
+  margin: 0 auto;
   display: flex;
-  /* flex-direction: column; */
   justify-content: space-between;
   align-items: center;
+  border-bottom: #ff943c solid 1px ;
+}
+
+.home .text .name {
+  border-left: solid #fff 1px;
+  padding-left: 40px;
 }
 
 .home .text .text-one {
-  font-size: 25px;
+  font-size: 55px;
+  color: #fff;
 }
+
 .home .text .text-two {
-  font-size: 75px;
-  font-weight: bold;
-}
-.home .text .text-three {
-  font-size: 40px;
+  font-size: 30px;
+  color: #fff;
 }
 
 .home .button {
-  margin: 14px 0;
+  margin: 14px 40px 0;
 }
 
 .home .button button {
   outline: none;
-  background-color: #4070f4;
+  background-color: rgba(255, 255, 255, 0);
   color: #fff;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 500;
-  padding: 8px 16px;
-  border: 2px solid transparent;
-  border-radius: 5px;
+  padding: 8px 29px;
+  border: 2px solid #ff943c;
+  border-radius: 25px;
   transition: all 0.4s ease;
+  margin-top: 20px;
 }
 
 .home .button button:hover {
-  color: #4070f4;
-  background-color: #fff;
-  border-color: #4070f4;
+  color: #000;
+  background-color: #ff943c;
+  border-color: #ff943c;
   cursor: pointer;
 }
 
 .home .avatar {
-  width: 450px;
-  height: 450px;
+  width: 580px;
+  height: auto;
   overflow: hidden;
-  border-top-left-radius: 25%;
-  border-bottom-right-radius: 25%;
 }
 
 .home .avatar img {
@@ -172,6 +229,7 @@ section .title span {
   font-weight: 600px;
   /* padding-top: 8px; */
   position: relative;
+  color: #fff;
 }
 
 section .title span::before,
@@ -182,7 +240,7 @@ section .title span::after {
   bottom: 0;
   height: 3px;
   width: 100%;
-  background-color: #4070f4;
+  background-color: #ff943c;
 }
 
 section .title span::after {
@@ -196,6 +254,11 @@ section .title span::after {
   margin-top: 100px;
 }
 
+.about .content{
+  border-bottom: #ff943c solid 1px ;
+  padding-bottom: 80px;
+}
+
 .about .about-details {
   display: flex;
   justify-content: space-between;
@@ -207,20 +270,25 @@ section .title span::after {
 }
 
 .about .about-details .right img {
-  height: 400px;
-  width: 400px;
+  width: 100%;
+  height: auto;
   object-fit: cover;
   border-radius: 12px;
 }
 
 .about .about-details .left {
-  width: 55%;
+  width: 45%;
 }
 
 section .left .topic {
   font-size: 25px;
   font-weight: 500;
   margin-bottom: 10px;
+  color:#fff;
+}
+
+section .left p{
+  color: #fff;
 }
 
 .about .about-details .left p {
@@ -228,14 +296,12 @@ section .left .topic {
 }
 
 /* Skills Css */
-.skills {
-  background-color: #f0f8ff;
-  padding: 20px 0;
-  margin-top: 100px;
-}
+
 .skills .content {
   padding: 40px 0;
+  border-bottom: #ff943c solid 1px ;
 }
+
 .skills .skill-details {
   display: flex;
   align-items: center;
@@ -256,6 +322,11 @@ section .left .topic {
   align-items: center;
   display: flex;
   flex-wrap: wrap;
+  color: #fff;
+}
+
+.skills .skill-details .boxes .num{
+  color: #ff943c;
 }
 
 .skills .skill-details .boxes .box {
@@ -278,9 +349,15 @@ section .left .topic {
   margin-top: 100px;
 }
 
+.projects .content{
+  border-bottom: #ff943c solid 1px ;
+  padding-bottom: 80px;
+}
+
 .projects .boxes {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   flex-wrap: wrap;
 }
 
@@ -302,7 +379,7 @@ section .left .topic {
   bottom: 100%;
   left: 0;
   right: 0;
-  background-color: #008bbabd;
+  background-color: #ff943cf6;
   overflow: hidden;
   width: 100%;
   height: 0;
@@ -311,7 +388,7 @@ section .left .topic {
 
 .projects .boxes .box .overlay .text {
   white-space: nowrap;
-  color: white;
+  color: #000;
   font-size: 20px;
   position: absolute;
   overflow: hidden;
@@ -319,6 +396,16 @@ section .left .topic {
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects .boxes .box .overlay .text p{
+  font-size: 18px;
+  margin-top: 10px;
+  font-style: italic;
 }
 
 .projects .boxes .box:hover .overlay {
@@ -341,8 +428,6 @@ section .left .topic {
 
 /* Contact Css */
 .contact {
-  background-color: #f0f8ff;
-  padding: 20px 0;
   margin-top: 100px;
 }
 .contact .text {
@@ -352,13 +437,16 @@ section .left .topic {
 }
 
 .contact .text .topic {
-  font-size: 35px;
+  font-size: 30px;
   margin-bottom: 20px;
+  color: #fff;
 }
 
 .contact .text .media-icons i {
   font-size: 30px;
   margin: 0 20px;
+  color: #ff943c;
+  padding-top: 20px;
 }
 
 /* Responsive */
@@ -416,7 +504,7 @@ section .left .topic {
     height: 100vh;
     max-width: 400px;
     width: 100%;
-    background: #0e2431;
+    background: #ff943c;
     flex-direction: column;
     align-items: center;
     padding-top: 60px;
@@ -427,15 +515,11 @@ section .left .topic {
     left: 0;
   }
 
-  .navbar .menu li a {
+  nav .navbar .menu li a {
     display: block;
     margin: 10px 0;
     font-size: 23px;
-    color: #fff;
-  }
-
-  nav .navbar .menu li a {
-    color: #fff;
+    color: #000;
   }
 
   .navbar .media-icons a {
@@ -452,16 +536,28 @@ section .left .topic {
     height: 50vh;
   }
 
-  .home .text .text-two {
+  .home .home-content{
+    padding-top: 80px;
+  }
+
+  .home .text .text-one {
     font-size: 65px;
   }
-  .home .text .text-three {
+  .home .text .text-two {
     font-size: 35px;
   }
 
   .home .avatar {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: auto;
+  }
+
+  .about{
+    margin-top: 0;
+  }
+
+  .skills {
+    margin-top: 0;
   }
 
   .skills .skill-details {
@@ -477,6 +573,10 @@ section .left .topic {
     margin: 40px 0;
   }
 
+  .projects{
+    margin-top: 0;
+  }
+
   .projects .boxes .box {
     width: calc(100% / 2 - 20px);
     height: 250px;
@@ -485,13 +585,17 @@ section .left .topic {
   .projects .boxes .box .topic {
     font-size: 25px;
   }
+
+  .contact{
+    margin-top: 0;
+  }
 }
 
 @media (max-width: 540px) {
-  .home .text .text-two {
+  .home .text .text-one {
     font-size: 55px;
   }
-  .home .text .text-three {
+  .home .text .text-two {
     font-size: 30px;
   }
 

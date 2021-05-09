@@ -10,17 +10,22 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <nav>
       <div class="navbar">
-        <div class="logo"><a href="#">HieuDo.</a></div>
-        <ul class="menu">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Project</a></li>
-          <li><a href="#contact">Contact</a></li>
+        <div class="logo font-2"><a href="#">HieuDo.</a></div>
+        <ul class="menu font-medium">
+          <li><a href="#home">home</a></li>
+          <li><a href="#about">about</a></li>
+          <li><a href="#skills">skills</a></li>
+          <li><a href="#projects">project</a></li>
+          <li><a href="#contact">contact</a></li>
           <div class="cancel-btn">
             <i class="fas fa-times"></i>
           </div>
@@ -41,15 +46,16 @@
     <section class="home" id="home">
       <div class="home-content">
         <div class="text">
-          <div class="text-one">Hello</div>
-          <div class="text-two">I'm Hieu Do</div>
-          <div class="text-three">Web Developer</div>
-          <div class="button">
-            <button>Get CV</button>
+          <div class="name">
+            <div class="text-one font-light">Hieu Do</div>
+            <div class="text-two font-light">frontend developer</div>
           </div>
+          <a href="#"><div class="button">
+            <button class="font-light">get CV</button>
+          </div></a>
         </div>
         <div class="avatar">
-          <img src="./Img/IMG_20200117_220548_389.jpg" alt="" />
+          <img src="./Img/FB_IMG_1609332952794.png" alt="avatar" />
         </div>
       </div>
     </section>
@@ -57,14 +63,14 @@
     <!-- About section -->
     <section class="about" id="about">
       <div class="content">
-        <div class="title"><span>About Me</span></div>
+        <div class="title font-regular"><span>About Me</span></div>
         <div class="about-details">
           <div class="right">
-            <img src="./Img/IMG_20200117_220548_389.jpg" alt="" />
+            <img src="./Img/IMG_20200117_220548_389.jpg" alt="personal-img" />
           </div>
           <div class="left">
-            <div class="topic">Lorem ipsum dolor</div>
-            <p>
+            <div class="topic font-medium">Lorem ipsum dolor</div>
+            <p class="font-regular">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam,
               velit architecto recusandae placeat debitis magni laborum delectus
               nemo, nesciunt dolorum porro non iusto laudantium quibusdam beatae
@@ -80,11 +86,11 @@
     <!-- skill section -->
     <section class="skills" id="skills">
       <div class="content">
-        <div class="title"><span>My Skills</span></div>
+        <div class="title font-regular"><span>My Skills</span></div>
         <div class="skill-details">
           <div class="left">
-            <div class="topic">Skills Reflects Our Knowledge</div>
-            <p>
+            <div class="topic font-medium">Skills Reflects Our Knowledge</div>
+            <p class="font-regular">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
               quam asperiores assumenda error recusandae numquam architecto
               quisquam voluptatum laudantium sint, fuga cupiditate
@@ -94,7 +100,7 @@
               Suscipit.
             </p>
           </div>
-          <div class="boxes">
+          <div class="boxes font-medium">
             <div class="box">
               <div class="topic">HTML</div>
               <div class="num">90%</div>
@@ -109,7 +115,7 @@
             </div>
             <div class="box">
               <div class="topic">ReactJS</div>
-              <div class="num">90%</div>
+              <div class="num">60%</div>
             </div>
           </div>
         </div>
@@ -119,22 +125,22 @@
     <!-- Project Section -->
     <section class="projects" id="projects">
       <div class="content">
-        <div class="title"><span>My Projects</span></div>
+        <div class="title font-regular"><span>My Projects</span></div>
         <div class="boxes">
           <div
             class="box"
-            style="background-image: url(./Img/IMG_20200117_220548_389.jpg)"
+            style="background-image: url(./Img/monster-rolodex.png)"
           >
-            <div class="overlay">
-              <div class="text">Monster Rolodex</div>
-            </div>
+            <a href="https://hieuhesudo.github.io/monsters-rolodex/"><div class="overlay font-regular">
+              <div class="text"><span class="font-bold">Monster Rolodex</span><p>Bài tập làm quen ReactJS</p></div>
+            </div></a>
           </div>
           <div class="box">
             <!-- <img src="./Img/IMG_20200117_220548_389.jpg" alt=""> -->
             <div class="overlay"></div>
           </div>
-          <div class="box">
-            <div class="overlay"></div>
+          <div class="box" style="background-image: url(./Img/hesu-studio.png);">
+            <a href="https://hieuhesudo.github.io/binbommmm.github.io/Hesu%20Studio/index.html"><div class="overlay font-regular"><div class="text"><span class="font-bold">Hesu Studio</span><p>Website thương mại điện tử</p></div></div></a>
           </div>
           <div class="box">
             <div class="overlay"></div>
@@ -151,9 +157,11 @@
 
     <section class="contact" id="contact">
       <div class="content">
-        <div class="title"><span>Contact Me</span></div>
+        <div class="title font-regular"><span>Contact Me</span></div>
         <div class="text">
-          <div class="topic">Let's get coffee sometime, my treat</div>
+          <div class="topic font-regular">
+            Let's get coffee sometime, my treat
+          </div>
           <div class="media-icons">
             <a href="#"><i class="fab fa-facebook-f"></i></a>
             <a href="#"><i class="fab fa-linkedin"></i></a>
